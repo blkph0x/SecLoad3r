@@ -1,8 +1,8 @@
 # SecLoad3r
-Loads things
+# Loads things
 
 SecLoad3r.cpp info
-How it Works:
+#How it Works:
 
 Base64 Decoding: The program starts by decoding the Base64-encoded files into their binary representation. It utilizes a function base64_decode to perform the decoding.
 
@@ -12,7 +12,7 @@ Concatenating Files: Files are concatenated into a single executable buffer. The
 
 Execution: After locating the entry point RVA, the program calculates the entry point address and calls the entry point function, effectively executing the concatenated executable.
 
-How to Use:
+#How to Use:
 
 Compile the source code using a C++ compiler compatible with Windows.
 Ensure that all parts of the split executable are named following the pattern "part_#.b64", where # is the sequential number of the file.
@@ -26,8 +26,8 @@ C++ compiler compatible with Windows
 Standard C++ libraries
 Windows API (for PE header parsing)
 
-SecSplit3r.cpp info
-How it Works:
+#SecSplit3r.cpp info
+#How it Works:
 
 Binary File Splitting: The program starts by reading the binary executable file specified as input. It then divides the file into a specified number of even parts.
 
@@ -35,7 +35,7 @@ Base64 Encoding: Each part of the binary file is encoded into Base64 format usin
 
 Output Files: The encoded data for each part is written to separate files named according to the pattern "part_#.b64", where # represents a sequential number.
 
-How to Use:
+#How to Use:
 
 Compile the source code using a C++ compiler.
 Run the compiled executable from the command line, specifying the binary executable file as input.
@@ -45,7 +45,7 @@ Adjusting Number of Parts:
 
 To adjust the number of parts the binary file is split into, modify the num_parts constant in the code. By default, it is set to 5.
 
-Dependencies:
+#Dependencies:
 
 C++ compiler
 Standard C++ libraries
